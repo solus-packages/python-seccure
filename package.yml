@@ -1,0 +1,19 @@
+name       : python-seccure
+version    : 0.3.2
+release    : 1
+source     :
+    - https://pypi.python.org/packages/fa/86/6dac8027bec7a0be84faee3487ee4d8284b8f9cf48657bbf08d2a685891e/seccure-0.3.2.tar.gz : 03b69cb00bf032c9b4271bf23a6ed504510493829f7deefa16430afa64a20120
+license    : LGPL-3.0
+component  : programming.python
+summary    : Simple Elliptic Curve Cryptography for Python
+description: |
+    Simple Elliptic Curve Cryptography for Python
+builddeps  :
+    - python-setuptools
+    - seccure
+rundeps    :
+    - seccure
+build      : |
+    %python_setup
+install    : |
+    %python_install
